@@ -9,10 +9,11 @@
 */
 #include <LittleFS.h>
 
-
 File file;
 String input;
 
+// The command that the program waits for to send the file.
+String command = "please"
 
 void setup() {
   Serial.begin(115200);
@@ -24,21 +25,31 @@ void setup() {
 
 
 void loop() {
-  if (Serial.available()) {
+  // If the serial port is ready, check for input. 
+  if (Serial.available()) {  
+    // Looks like what it does. 
+    // User enters a string, when the Serial port detects a "\n" (newline)
+    // the program sends the file.
     input = Serial.readStringUntil('\n');
-    if (input == "hello") {
+
+    // If the line that the Serial port reads in is the same as the command,
+    // then it calls a function which writes the file to the Serial port. 
+    if (input == command) {
       write_file(file);
     }
   }
 }
 
 
-void write_file(File file){
+void write_file(File file) {
+  // Let's check if the file exists first.
   if (file) {
+    // If it does, then while there is unread data in the file, 
+    // write all the data into the Serial port.
     while (file.available()) {
       Serial.write(file.read());
     }
-    Serial.println("---------------");
+    // No corrupted files please!
     file.close();
   }
 }
