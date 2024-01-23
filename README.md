@@ -6,7 +6,8 @@
 There are two categories of scripts. Some for the RP2040, and others for host computers. 
 
 Microcontroller Scripts
-- Read
+- WORKING
+- Bare
 - Send
 
 Python Scripts
@@ -14,8 +15,7 @@ Python Scripts
 
 ## RP2040 Scripts
 
-### Read
-Very badly named. Much too lazy to change it. 
+### WORKING 
 This is the original script I used. The only reason it is here is so I can copy code over to other scripts.
 
 ### Bare
