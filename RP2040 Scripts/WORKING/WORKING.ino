@@ -31,11 +31,11 @@ void setup() {
       }
   }  
   
-  if(dir.next()) {
-    Serial.println("Files exist.");
-  } else {
-    Serial.println("Nothing here!");
-  }
+  // if(dir.next()) {
+  //   Serial.println("Files exist.");
+  // } else {
+  //   Serial.println("Nothing here!");
+  // }
 
 }
 

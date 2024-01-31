@@ -34,6 +34,8 @@ def get_data(port='COM7', baud=115200):
             if line == b'':
                 break
 
+            print(line)
+
     return raw
 
 
