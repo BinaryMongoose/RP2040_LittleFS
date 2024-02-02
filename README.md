@@ -1,5 +1,5 @@
 # RP2040_LittleFS
- Some test scripts for working with (LittleFS)[https://arduino-pico.readthedocs.io/en/latest/fs.html] on the RP2040.
+ Some test scripts for working with [LittleFS](https://arduino-pico.readthedocs.io/en/latest/fs.html) on the RP2040.
 
 ## Scripts
 
