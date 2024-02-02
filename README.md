@@ -1,5 +1,5 @@
 # RP2040_LittleFS
- Some test scripts for working with LittleFS on the RP2040.
+ Some test scripts for working with [LittleFS](https://arduino-pico.readthedocs.io/en/latest/fs.html) on the RP2040.
 
 ## Scripts
 
@@ -9,6 +9,7 @@ Microcontroller Scripts
 - WORKING
 - Bare
 - Send
+- Tree
 
 Python Scripts
 - Read
@@ -23,6 +24,9 @@ A Bare script that showcases LittleFS. Can be used on "any" RP2040 board.
 
 ### Send
 This script shows you how to send data over serial.
+
+### Tree
+This script is a wonderful debugging tool, lists every directory, every file, located on the file system. 
 
 
 ## Python Scripts
