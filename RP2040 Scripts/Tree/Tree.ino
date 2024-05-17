@@ -41,13 +41,13 @@ void start_tree(String path) {
 }
 
 
-// This is a recursive function. Dangerous if left unchecked, but very usefull when employed correctelly. 
+// This is a recursive function. Dangerous if left unchecked, but very useful when employed correctly. 
 // More info in the function diagram. 
 void print_tree(String dir_name, int level) {
   // Open the directory with LittleFS
   Dir dir = LittleFS.openDir(dir_name);
 
-  // This actually caused a lot of headahes. You must keep note of the 
+  // This actually caused a lot of headaches. You must keep note of the 
   // full path to the directory, or else it won't work. 
   String full_path = dir_name;
 
