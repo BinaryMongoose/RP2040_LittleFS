@@ -25,7 +25,7 @@ void setup() {
   delay(2000); // 2 seconds is good. (2000ms = 2s)
 
   // Opens file in "write" mode.
-  // In systems were any data is good data DO NOT USE WRITE MODE.
+  // In systems where any data is good data DO NOT USE WRITE MODE.
   // Write deletes everything in the file. Think of write as "overwrite".
   // Use append (a) instead. New data doesn't replace old data, it's added to the end.
   file = LittleFS.open("/main/data/file.txt", "w");
@@ -55,8 +55,8 @@ void setup() {
     Serial.println("Opening file...");
     // WHILE there is data in the file we will write the data to the Serial monitor.
     while (file.available()) {
-      // Here we are using Serial.write instead of print. 
-      // This is because we want the RAW (byte) data.  
+      // Here we are using Serial.write instead of the usual print. 
+      // This is because we want the raw (byte) data.  
       Serial.write(file.read()); 
     }
     Serial.println("\nFile read.");
